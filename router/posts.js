@@ -25,7 +25,7 @@ router.route('/:id')
       })
       .delete((req,res)=>{
         db.deleteKP('posts',req.params.id).then(function(){
-          res.status(201).send('ok');
+          res.status(201).send('deleted');
         })
       });
 

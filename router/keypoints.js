@@ -23,7 +23,7 @@ router.route('/:id')
       })
       .post(function (req, res) {
         db.updateKP('keypoints',req.params.id,req.body).then(function(){
-          res.status(202).send('delete!')
+          res.status(202).send('ok!')
         })
       });
 
